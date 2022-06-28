@@ -24,6 +24,7 @@ body p {
 body button,
 body input,
 #play-again {
+ 
   text-decoration: none;
   border: 4px outset #faf9f9;
   background-color: #413f3f;
@@ -122,6 +123,7 @@ button:hover {
 #content-main #questions .individual-questions {
   background-color: black;
   border: 4px outset #605e5e;
+  
 }
 
 #content-main #questions .individual-questions button {
@@ -139,4 +141,9 @@ button:hover {
 }
 .red {
   background-color: red;
+}
+
+.hide {
+display: none;
+
 }

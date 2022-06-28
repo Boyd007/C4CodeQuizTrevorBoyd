@@ -20,7 +20,8 @@
       <section id="questions">
         <h3>Questions</h3>
 
-        <div id="question-one" class="individual-questions">
+        <div id="question-one"  class="individual-questions q0">
+        
           <p>
             What's the best way to check your work while working in JavaScript?
           </p>
@@ -29,14 +30,14 @@
           <button class="answer">alert();</button>
         </div>
 
-        <div id="question-two" class="individual-questions">
+        <div id="question-two" id="q1" class="individual-questions hide q1">
           <p>Inside which HTML element do we put the JavaScript?</p>
           <button class="answer">A boolean</button>
           <button class="answer correct-answer">A String</button>
           <button class="answer">All of them</button>
         </div>
 
-        <div id="question-three" class="individual-questions">
+        <div id="question-three" id="q2" class="individual-questions hide q2">
           <p>What does this: <span>!</span> logical operator do?</p>
           <button class="answer">Put emphasis on a variable</button>
           <button class="answer">Change something to false</button>
@@ -45,13 +46,13 @@
           </button>
         </div>
 
-        <div id="question-four" class="individual-questions">
+        <div id="question-four" id="q3" class="individual-questions hide q3">
           <p>Objects can only have a maximum of 10 values.</p>
           <button class="answer">True</button>
           <button class="answer correct-answer">False</button>
         </div>
 
-        <div id="question-five" class="individual-questions">
+        <div id="question-five" id="q4" class="individual-questions hide q4">
           <p>What does <span>return;</span> do at the end of a function?</p>
           <button class="answer">Returns you to the top of the page</button>
           <button class="answer correct-answer">
@@ -60,7 +61,7 @@
           <button class="answer">Returns to the beginning of a function</button>
         </div>
 
-        <div id="question-six" class="individual-questions">
+        <div id="question-six" id="q5" class="individual-questions hide q5">
           <p>What does the <span>.pop();</span> method do to an array?</p>
           <button last-question="true" class="answer correct-answer">
             Remove the last string in an array
@@ -73,10 +74,6 @@
           </button>
         </div>
 
-        <div id="answer-was">
-          <p id="correct-choice">Correct!</p>
-          <p id="wrong-choice">Wrong!</p>
-        </div>
 
         <a href="Quiz.html" id="play-again">Would You Like To Play again?</a>
       </section>
@@ -127,6 +124,7 @@
         </div>
       </section>
     </div>
+<div class="hide q6"></div>
 
     <!-- <div id="content-end" class="full-page">
         <h3>Time's up!</h3>

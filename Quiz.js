@@ -15,9 +15,14 @@ function countdown() {
   }, 1000);
 }
 countdown();
+var questionid=1
 var buttonAnswer = document.querySelectorAll(".answer");
 buttonAnswer.forEach((button) => {
-  button.addEventListener("click", function (event) {
+  button.addEventListener("click", function (event) { 
+var questioncontainer=document.querySelector(".q"+questionid)
+questioncontainer.classList.remove("hide")
+console.log(questioncontainer)
+  questionid++
     console.log(event.target.classlist);
     if (event.target.classList[1]) {
       event.target.classList.add("green");

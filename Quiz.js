@@ -15,14 +15,19 @@ function countdown() {
   }, 1000);
 }
 countdown();
-var questionid=1
+var questionid = 1;
+var previousquestionid=0
 var buttonAnswer = document.querySelectorAll(".answer");
 buttonAnswer.forEach((button) => {
-  button.addEventListener("click", function (event) { 
-var questioncontainer=document.querySelector(".q"+questionid)
-questioncontainer.classList.remove("hide")
-console.log(questioncontainer)
-  questionid++
+  button.addEventListener("click", function (event) {
+    var questioncontainer = document.querySelector(".q" + questionid);
+    questioncontainer.classList.remove("hide");
+    var previousquestioncontainer = document.querySelector(".q" +previousquestionid)
+    previousquestioncontainer.classList.add("hide");
+
+    console.log(questioncontainer);
+    questionid++;
+    previousquestionid++
     console.log(event.target.classlist);
     if (event.target.classList[1]) {
       event.target.classList.add("green");

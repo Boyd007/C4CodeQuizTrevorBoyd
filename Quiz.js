@@ -8,8 +8,10 @@ function countdown() {
     if (timeLeft <= 0) {
       clearInterval(timeInterval);
 
+      
       alert("Time's Up");
       var enterscore = prompt("Enter Your Initials");
+     
       document.getElementById("user-name-1").textContent = enterscore;
     }
   }, 1000);
